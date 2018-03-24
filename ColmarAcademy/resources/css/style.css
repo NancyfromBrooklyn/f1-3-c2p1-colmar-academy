@@ -1,0 +1,494 @@
+/* Begin Universal Styles */
+
+html,
+body {
+  display: block;
+  width: 100%;
+  font-size: 1.125rem;
+  font-family: "Oxygen", sans-serif;
+  background-color: #d8d8d8;
+}
+
+body {
+  font-size: 18px;
+}
+
+head {
+  display: none;
+}
+
+div {
+  display: block;
+}
+
+p {
+  font-size: 0.9rem;
+  line-height: 1rem;
+  color: #687083;
+}
+
+strong {
+  font-weight: bold;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1.1;
+  text-align: left;
+  padding-left: 1.5rem;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.4rem;
+  font-weight: bold;
+  padding: 2rem 0;
+  text-align: left;
+  padding-left: 1.5rem;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.2rem;
+  font-weight: bold;
+}
+
+/* End Universal Styles */
+
+/* Begin Header and Nav */
+
+header {
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  width: 100%;
+  height: 4rem;
+  background-color: white;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.125rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  padding-left: 1.5rem;
+}
+
+.logo img {
+  height: 2rem;
+  margin-left: 1.5rem;
+}
+
+header nav {
+  padding-left: 1.5rem;
+}
+
+nav span {
+  display: inline-block;
+  margin-right: 1.5rem;
+}
+
+nav.mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 710px) {
+  header .logo {
+    display: none;
+    padding: 0;
+  }
+
+  nav.mobile  {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  nav.desktop {
+    display: none;
+  }
+
+  nav span img {
+    height: 1.75rem;
+  }
+
+  nav span:first-child img {
+    height: 2rem;
+  }
+}
+
+/* End Header and Nav */
+
+/*Begin Top Section */
+
+.container {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  max-width: 100%;
+}
+
+.right-container {
+  display: flex;
+  max-width: 60%;
+  height: auto;
+  margin: 2rem 1.5rem;
+}
+
+.start {
+  width: 75%;
+  background-color: #adbed3;
+  color: #01161e;
+  font-size: 1.2rem;
+  padding: 1rem 0;
+  text-align: center;
+  transition: color 400ms, background-color 400ms;
+  font-weight: bold;
+  float: left;
+  margin-left: 1.5rem;
+  border-radius: 1rem;
+}
+
+.start:hover {
+  background-color: #bcb195;
+  color: #01161e;
+}
+
+@media only screen and (max-width: 710px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+  }
+
+  .right-container img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    font-weight: normal;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: normal;
+  }
+}
+
+/*End Top Container */
+
+/*Begin Information Section */
+
+.info-container .feature {
+  max-width: 60%;
+  height: auto;
+  margin: 2rem 1.5rem;
+  float: left;
+}
+
+.info-container .feature img {
+  flex: auto;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+
+.info-container .feature h2 {
+  line-height: 3rem;
+}
+
+.info-container .feature p {
+  padding-right: 4rem;
+  color: #905b57;
+  line-height: 1rem;
+  display: block;
+  word-wrap: break-word;
+}
+
+.info-container .stacked-boxes  {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 35%;
+    float: right;
+}
+
+.content-box img {
+  width: 35%;
+  margin: 1rem;
+  float: left;
+}
+
+.content-box .mobile {
+  display: none;
+}
+
+.content-box .side-text {
+  margin-right: 1rem;
+}
+
+.content-box .side-text h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.4rem;
+  padding: 2rem 0;
+  text-align: left;
+  padding-left: 1.5rem;
+}
+
+.content-box .side-text p {
+  font-family: "Quattrocento Sans", sans-serif;
+  font-size: 1rem;
+  text-align: left;
+  padding-left: 1.5rem;
+}
+
+.content-box .side-text a {
+  font-family: "Quattrocento Sans", sans-serif;
+  color: #3c1beb;
+  font-size: 0.9rem;
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 3;
+}
+
+@media only screen and (max-width: 710px) {
+  .info-container .feature img, h3, h5 {
+    display: none;
+  }
+
+.info-container .feature p {
+  display: none;
+ }
+
+.info-container .stacked-boxes {
+  display:inline-flex;
+  float: left;
+ }
+
+.content-box .desktop  {
+  display: none;
+ }
+
+.content-box .mobile  {
+  display: block;
+  width: 100%;
+  height: auto;
+ }
+}
+
+/* End Information Section */
+
+/* Start Learning Section */
+
+.courses {
+  display: block;
+}
+
+.courses h1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.course-container {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 2rem 4rem;
+}
+
+.course-box {
+  width: 25rem;
+  background-color: white;
+  margin: 2rem 2rem 1rem 4.5rem;
+}
+
+.course-box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.course-box .textbox {
+  width: 13.75rem;
+  height: 8.75rem;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  line-height: 1;
+}
+
+.course-box .textbox span {
+  font-family: "Quattrocento Sans", sans-serif;
+  font-weight: 200;
+  font-size: 0.9rem;
+  color: #687083;
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.course-box .textbox p {
+  line-height: 1.5;
+}
+
+.course-box .textbox h6 {
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 710px) {
+  .course-box {
+    border-radius: 1rem;
+  }
+
+  .course-box .textbox {
+    width: 10rem;
+    height: 2rem;
+    padding: 1rem 0 1.5rem 1rem;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .course-box img {
+    display: none;
+  }
+
+  .course-box span {
+    display: none;
+  }
+
+  .course-box p {
+    display: none;
+  }
+}
+
+/* End Learning Section */
+
+/* Begin Thesis Section */
+
+.thesis-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.thesis-section h1 {
+  text-align: center;
+}
+
+.columns {
+  margin: 0 1.5rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.video-container video {
+  display: inline-block;
+  width: 90%;  /* This is the video, leave it */
+}
+
+.thesis-section .text p {
+  color: #905b57;
+}
+
+.left-column h3 {
+  margin: 1.5rem 0;
+}
+
+
+
+/* this made the words pull up to the right of the images */
+.right-column .thesis {
+  display: flex;
+  align-items: center;
+  height: 10.5rem;
+  width: 26.5rem;
+  padding-left: 1rem;
+}
+/* this centered the wording but overlap */
+.thesis .image-container {
+  height: 9.75rem;
+  width: 9.75rem;
+  padding-right: 1rem;
+  padding-top: 1.5rem;
+}
+
+.thesis .text-box h3 {
+  flex: 2;
+  font-weight: normal;
+  line-height: 1;
+  justify-content: center;
+}
+
+.thesis .text-box p {
+  line-height: 1.2;
+  justify-content: center;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 710px) {
+  .right-column {
+    display: none;
+  }
+
+  .text h3 {
+    display: none;
+  }
+
+  .text p {
+    display: none;
+  }
+
+  }
+/* End Thesis Section */
+
+/* Begin Footer Section */
+
+footer {
+  background-color: white;
+  border-top: 1px solid #01161E;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 4rem;
+  width: 100%;
+}
+
+footer h5 {
+  font-family: "Roboto", sans-serif;
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+footer nav {
+  align-self: auto;
+  padding-top: 1rem;
+}
+
+footer span {
+  padding-left: 1rem;
+  font-size: 0.8rem;
+  color: #01161E;
+}
+
+@media only screen and (max-width: 710px) {
+  footer span {
+    display: none;
+  }
+}
+
+/* End Footer Section */
